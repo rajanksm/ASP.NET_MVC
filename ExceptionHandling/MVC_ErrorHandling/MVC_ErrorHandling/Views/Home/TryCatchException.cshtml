@@ -1,0 +1,15 @@
+﻿@model MVC_ErrorHandling.Models.ErrorMessage  
+@{
+    ViewBag.Title = "TryCatchException";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Error handing</h2>
+
+@if (Model != null)
+{
+    <h1>Exception from @Model.ExceptionFrom </h1>
+    <h2>
+        @Model.ExceptionMessage
+    </h2>
+}
